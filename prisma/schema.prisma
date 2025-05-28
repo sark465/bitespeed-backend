@@ -3,10 +3,14 @@
 generator client {
   provider      = "prisma-client-js"
   binaryTargets = ["native", "debian-openssl-3.0.x"]
+<<<<<<< HEAD
 }
 
 vider = "prisma-client-js"
+=======
+>>>>>>> 2424b59 (Fix: Add Prisma binary target for Render deployment)
 }
+
 
 datasource db {
   provider = "postgresql"
