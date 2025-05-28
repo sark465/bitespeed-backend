@@ -18,32 +18,19 @@ Folder Structure:
 bitespeed-backend/
 │
 ├── src/
-│   ├── controllers/         # Business logic for routes
-│   │   └── identifyController.ts
-│   │
-│   ├── models/              # Prisma schema or other data models
-│   │   └── contactModel.ts
-│   │
-│   ├── routes/              # Express route definitions
-│   │   └── identifyRoutes.ts
-│   │
-│   ├── services/            # Optional: for complex business/service layer logic
-│   │   └── contactService.ts
-│   │
-│   ├── prisma/              # Prisma related files and schema
-│   │   └── schema.prisma
-│   │
-│   ├── utils/               # Utility/helper functions
-│   │   └── logger.ts
-│   │
-│   ├── db.ts                # Prisma client instance
-│   ├── app.ts               # Express app setup (middlewares, routes)
-│   └── server.ts            # Server startup and listening
-│
-├── .env                     # Environment variables
-├── package.json             # NPM dependencies and scripts
-├── tsconfig.json            # TypeScript config
-├── README.txt               # Project documentation
+│   ├── controllers/
+│   │    └── identifyController.ts        # Business logic for identifying contacts
+│   ├── models/
+│   │    └── contactModel.ts               # Prisma model definitions (if separated)
+│   ├── routes/
+│   │    └── identifyRoutes.ts             # Express router for /identify endpoint
+│   ├── db.ts                             # Prisma client initialization
+│   ├── app.ts                            # Express app setup with middleware
+│   └── server.ts                         # Server start and listen
+├── .env                                  # Environment variables
+├── package.json                          # NPM dependencies and scripts
+├── tsconfig.json                         # TypeScript config
+├── README.md                             # Project documentation
 -----------------
 Setup Instructions:
 -------------------
